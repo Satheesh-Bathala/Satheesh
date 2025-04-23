@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+
+<app-checkbox
+  [items]="users"
+  (headerChecked)="onHeaderChecked($event)"
+  (rowChecked)="onRowChecked($event)"
+></app-checkbox>
+
+<p>Selected Names: {{ selectedNames}}</p>
+<router-outlet />
